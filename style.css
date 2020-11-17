@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 2000px;
+}
+header{
+    width: 500px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+h2{
+    text-align: center;
+}
+.fourDivs{
+    background-color: tomato;
+    width: 500px;
+    height: 400px;
+    border: 1px solid tomato;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fourDivs div {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.fourDivs div:first-child{
+    top: 0;
+    left: 0;
+}
+.fourDivs div:nth-child(2){
+    top: 0;
+    right: 0;
+}
+.fourDivs div:nth-child(3){
+    bottom: 0;
+    left: 0;
+}
+.fourDivs div:last-child{
+    bottom: 0;
+    right: 0;
+}
+
+.oneDiv{
+    background-color: tomato;
+    width: 500px;
+    height: 400px;
+    border: 1px solid tomato;
+    position: relative;
+    margin: 2.5% auto;
+}
+
+.oneDiv div{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
